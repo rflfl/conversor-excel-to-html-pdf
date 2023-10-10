@@ -2,4 +2,8 @@ const Reader = require('./Reader')
 
 let leitor = new Reader()
 
-leitor.Reade('./users.csv')
+async function main(){
+    let dados = await leitor.Reade('./users.csv')
+}
+
+main()
