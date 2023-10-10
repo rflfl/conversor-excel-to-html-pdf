@@ -8,7 +8,7 @@ class Writer {
 
     async Write(filename, data) {
         try {
-            await this.write(filename, data)
+            await this.writer(filename, data)
             return true
         } catch (err) {
             return false
